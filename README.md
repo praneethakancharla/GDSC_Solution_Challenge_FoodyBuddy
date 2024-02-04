@@ -9,5 +9,5 @@ Food waste is a pressing global issue that not only contributes to environmental
 <br>
 Tech stack we have used are:
 frontend - html,css,java script and bootstrap<br>
-backend - python<br>
+backend - php<br>
 database - mysql<br>
