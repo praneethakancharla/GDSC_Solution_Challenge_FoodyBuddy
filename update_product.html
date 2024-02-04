@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Product</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="update_product.css">
+    <style>
+        .updateProduct-heading {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="updateProduct-heading" style="font-size: 70px;">Update Product</h1>
+        <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search for products..">
+
+        <ul id="productList"></ul>
+
+        <!-- Update Product Form -->
+        <form id="updateProductForm" style="display: none;">
+            <label for="productName">Name:</label><br>
+            <input type="text" id="productName"><br>
+
+            <label for="manufactureDate">Manufacture Date:</label><br>
+            <input type="text" id="manufactureDate"><br>
+
+            <label for="expiryDate">Expiry Date:</label><br>
+            <input type="text" id="expiryDate"><br>
+
+            <label for="price">Price:</label><br>
+            <input type="text" id="price"><br>
+
+            <label for="quantity">Quantity:</label><br>
+            <input type="text" id="quantity"><br>
+
+            <button type="button" onclick="updateProduct()">Update</button>
+        </form>
+    </div>
+
+    <script src="update_product.js"></script>
+</body>
+</html>

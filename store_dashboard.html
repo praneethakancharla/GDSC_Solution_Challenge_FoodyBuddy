@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .dashboard-heading {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .btn-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .logout-btn {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="dashboard-heading" style="font-size: 70px;">Store Dashboard</h1>
+        <div class="row justify-content-left">
+            <div class="col-sm-4">
+                <button class="btn btn-success btn-lg btn-block mb-4">New Requests</button>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="btn-container">
+                    <button class="btn btn-primary btn-lg btn-block mb-2" type="submit" value="Add Product" onclick="openAddProductPage()">Add Product</button>
+                    <br>
+                    <button class="btn btn-primary btn-lg btn-block mb-2" type="submit" value="Remove Product" onclick="openremoveProductPage()">Remove Product</button>
+                    <br>
+                    <button class="btn btn-primary btn-lg btn-block mb-2" type="submit" value="update Product" onclick="openupdateProductPage()">Update Product Details</button>
+                    <br>
+                    <button class="btn btn-primary btn-lg btn-block mb-2">View Orders Received</button>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-danger logout-btn" type="submit" value="Logout" onclick="openSigninPage()">Logout</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function openAddProductPage() {
+            window.location.href = "add_product.html";
+        }
+        function openremoveProductPage() {
+            window.location.href = "remove_product.html";
+        }
+        function openupdateProductPage() {
+            window.location.href = "update_product.html";
+        }
+        function openupdateProductPage() {
+            window.location.href = "update_product.html";
+        }
+        function openSigninPage() {
+            window.location.href = "login.html";
+        }
+    </script>
+    
+</body>
+</html>
