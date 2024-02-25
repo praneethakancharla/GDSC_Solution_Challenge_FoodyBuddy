@@ -11,3 +11,12 @@ Tech stack we have used are:
 frontend - html,css,java script and bootstrap<br>
 backend - php<br>
 database - mysql<br>
+<br>
+**Installation**
+Paste the folder in htdocs folder inside xampp which is in c drive
+<br>
+Now start the apache server on xampp contron panel
+<br>
+Change password to mysql workbench of yours
+<br>
+now to to web browser and run the login.html page on localhost
